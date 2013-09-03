@@ -1,4 +1,5 @@
-setting
+<h1>setting</h1>
 
-cd
+<code>
 ln -s ~/.vim/vimrc ~/.vimrc
+</code>
