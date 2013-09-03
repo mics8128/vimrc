@@ -6,8 +6,23 @@ filetype off
 " auto install and load vundle
 source ~/.vim/vimrc_vundle
 
-" auto reload vimrc when editing it
-autocmd! bufwritepost ~/.vim/vimrc source ~/.vimrc
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+    " auto reload vimrc when editing it
+    autocmd! bufwritepost ~/.vim/vimrc source ~/.vimrc
+
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it when the position is invalid or when inside an event handler
+    " (happens when dropping a file on gvim).
+    " Also don't do it when the mark is in the first line, that is the default
+    " position when opening a file.
+    autocmd BufReadPost *
+                \ if line("'\"") > 1 && line("'\"") <= line("$") |
+                \   exe "normal! g`\"" |
+                \ endif
+
+endif " has("autocmd")
 
 
 filetype plugin indent on
@@ -45,7 +60,6 @@ set history=50		" keep 50 lines of command line history
 
 " nerdtree-tabs
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
-imap <tab> <C-P> 
 
 
 " my key maps
