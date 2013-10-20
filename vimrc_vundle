@@ -14,7 +14,7 @@
     "Add your bundles here
     Bundle 'scrooloose/nerdtree'
     Bundle 'klen/python-mode'
-    Bundle 'vim-scripts/vimwiki'
+    " Bundle 'vim-scripts/vimwiki'
     " Bundle 'Lokaltog/powerline'
     "...All your other bundles...
     if iCanHazVundle == 0
