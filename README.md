@@ -1,10 +1,19 @@
-<h1>setting</h1>
+Install
+=======================
+if you have git
+    git clone git@github.com:mics8128/vimrc.git ~/.vim
 
-<code>
-ln -s ~/.vim/vimrc ~/.vimrc
-</code>
+backup old file
+    mv ~/.vimrc ~/.vimrc.bak
+    
+install
+    ln -s ~/.vim/vimrc ~/.vimrc
 
-<h1>hotkey</h1>
+and open your vim :D
+
+Hotkey
+=======================
+
 <table>
 <tr><td>F2</td><td>Toggle nerdtree-tabs</td></tr>
 <tr><td>Ctrl + A</td><td>Select all content</td></tr>
