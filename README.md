@@ -1,12 +1,15 @@
 Install
 =======================
 if you have git
+
     git clone git@github.com:mics8128/vimrc.git ~/.vim
 
 backup old file
+
     mv ~/.vimrc ~/.vimrc.bak
     
 install
+
     ln -s ~/.vim/vimrc ~/.vimrc
 
 and open your vim :D
