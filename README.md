@@ -2,7 +2,7 @@ Install
 =======================
 if you have git
 
-    git clone git@github.com:mics8128/vimrc.git ~/.vim
+    git clone https://github.com/mics8128/vimrc.git ~/.vim
 
 backup old file
 
