@@ -72,5 +72,5 @@ map <C-A> ggVG
 " solarized setting
 if has('gui_running')
     colorscheme solarized
-    set guifont=Source\ Code\ Pro\ Medium\ 10
+    set guifont=Droid\ Sans\ Mono
 endif
