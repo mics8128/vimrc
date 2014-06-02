@@ -17,9 +17,9 @@ and open your vim :D
 Include Bundle
 =======================
 
-'gmarik/vundle'
-'scrooloose/nerdtree'
-'klen/python-mode'
-'altercation/vim-colors-solarized'
-'mattn/emmet-vim'
+* 'gmarik/vundle'
+* 'scrooloose/nerdtree'
+* 'klen/python-mode'
+* 'altercation/vim-colors-solarized'
+* 'mattn/emmet-vim'
 
