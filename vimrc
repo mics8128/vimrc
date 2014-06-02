@@ -52,6 +52,7 @@ set relativenumber
 set nobackup
 set nowritebackup
 set history=50		" keep 50 lines of command line history
+set mouse=a
 
 
 "set laststatus=2
