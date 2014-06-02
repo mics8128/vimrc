@@ -13,7 +13,7 @@
     Bundle 'gmarik/vundle'
     "Add your bundles here
     Bundle 'scrooloose/nerdtree'
-    Bundle 'klen/python-mode'
+    " Bundle 'klen/python-mode'
     Bundle 'altercation/vim-colors-solarized'
     Bundle 'mattn/emmet-vim'
     "...All your other bundles...
