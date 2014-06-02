@@ -75,3 +75,7 @@ if has('gui_running')
     colorscheme solarized
     set guifont=Droid\ Sans\ Mono
 endif
+
+
+" syntastic setting
+let g:syntastic_html_checkers=['jshint', 'tidy']
