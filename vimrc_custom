@@ -1,0 +1,7 @@
+" my map leader :D
+let mapleader = ","
+
+
+" nerdtree-tabs
+let NERDTreeQuitOnOpen = 1
+nnoremap <silent> <leader>t :NERDTreeToggle<CR>

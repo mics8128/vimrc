@@ -14,12 +14,22 @@ install
 
 and open your vim :D
 
+IMPORTENT: this need powerline fonts. if you don't have powerline font please edit ./vimrc_plugins and change
+
+    let g:airline#extensions#branch#enabled = 1
+
+to
+
+    let g:airline#extensions#branch#enabled = 0
+
 Include Bundle
 =======================
 
-* 'gmarik/vundle'
-* 'scrooloose/nerdtree'
-* 'klen/python-mode'
-* 'altercation/vim-colors-solarized'
-* 'mattn/emmet-vim'
-
+* Bundle 'scrooloose/nerdtree'
+* Bundle 'altercation/vim-colors-solarized'
+* Bundle 'mattn/emmet-vim'
+* Bundle 'xsbeats/vim-blade' 
+* Bundle 'scrooloose/syntastic'
+* Bundle 'bling/vim-airline'
+* Bundle 'tpope/vim-fugitive'
+* Bundle 'klen/python-mode' -- is disable now :/

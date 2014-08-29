@@ -13,11 +13,14 @@
     Bundle 'gmarik/vundle'
     "Add your bundles here
     Bundle 'scrooloose/nerdtree'
-    " Bundle 'klen/python-mode'
     Bundle 'altercation/vim-colors-solarized'
     Bundle 'mattn/emmet-vim'
     Bundle 'xsbeats/vim-blade' 
     Bundle 'scrooloose/syntastic'
+    Bundle 'bling/vim-airline'
+    Bundle 'tpope/vim-fugitive'
+    " Bundle 'klen/python-mode'
+
     "...All your other bundles...
     if iCanHazVundle == 0
         echo "Installing Bundles, please ignore key map error messages"
