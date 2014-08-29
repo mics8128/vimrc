@@ -3,5 +3,4 @@ let mapleader = ","
 
 
 " nerdtree-tabs
-let NERDTreeQuitOnOpen = 1
-nnoremap <silent> <leader>t :NERDTreeToggle<CR>
+nnoremap <silent> <leader>t :NERDTreeTabsToggle<CR>

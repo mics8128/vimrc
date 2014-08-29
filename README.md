@@ -14,7 +14,7 @@ install
 
 and open your vim :D
 
-IMPORTANT: this need powerline fonts. if you don't have powerline font please edit ./vimrc_plugins and change
+*IMPORTANT*: this need powerline fonts. if you don't have powerline font please edit ./vimrc_plugins and change
 
     let g:airline#extensions#branch#enabled = 1
 
@@ -26,6 +26,7 @@ Include Bundle
 =======================
 
 * Bundle 'scrooloose/nerdtree'
+* Bundle 'jistr/vim-nerdtree-tabs'
 * Bundle 'altercation/vim-colors-solarized'
 * Bundle 'mattn/emmet-vim'
 * Bundle 'xsbeats/vim-blade' 
