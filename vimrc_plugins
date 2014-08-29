@@ -1,0 +1,19 @@
+" nerdtree-tabs
+nnoremap <silent> <C-W> :NERDTreeToggle<CR>
+
+
+" my key maps
+
+" automatically open and close the popup menu / preview window
+" au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+" set completeopt=menuone,menu,longest,preview
+
+" solarized setting for gvim
+if has('gui_running')
+    colorscheme solarized
+    set guifont=Droid\ Sans\ Mono
+endif
+
+
+" syntastic setting
+let g:syntastic_html_checkers=['jshint', 'tidy']

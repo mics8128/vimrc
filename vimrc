@@ -48,34 +48,13 @@ set cindent
 "Other
 set backspace=indent,eol,start  "allow backspacing over everything in insert mode
 set background=dark             "背景顏色
-set relativenumber
-set nobackup
-set nowritebackup
-set history=50		" keep 50 lines of command line history
-set mouse=a
+set number                      "顯示行數
+set nobackup                    
+set nowritebackup              
+set history=50	                " keep 50 lines of command line history
 
 
-"set laststatus=2
-"set statusline=%4*%<\%m%<[%f\%r%h%w]\ [%{&ff},%{&fileencoding},%Y]%=\[Position=%l,%v,%p%%]
 
-
-" nerdtree-tabs
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
-
-
-" my key maps
-map <C-A> ggVG
-
-" automatically open and close the popup menu / preview window
-" au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-" set completeopt=menuone,menu,longest,preview
-
-" solarized setting
-if has('gui_running')
-    colorscheme solarized
-    set guifont=Droid\ Sans\ Mono
-endif
-
-
-" syntastic setting
-let g:syntastic_html_checkers=['jshint', 'tidy']
+" load plugins setting and custom setting
+source ~/.vim/vimrc_plugins
+source ~/.vim/vimrc_custom
