@@ -14,7 +14,7 @@ install
 
 and open your vim :D
 
-IMPORTENT: this need powerline fonts. if you don't have powerline font please edit ./vimrc_plugins and change
+IMPORTANT: this need powerline fonts. if you don't have powerline font please edit ./vimrc_plugins and change
 
     let g:airline#extensions#branch#enabled = 1
 

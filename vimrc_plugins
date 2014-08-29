@@ -1,11 +1,11 @@
 "vim-airline
 set laststatus=2
 
-"vim-airline powerline mode~
-"if you dont want powerline fonts please delete this
+" vim-airline powerline mode
+" if you dont want powerline fonts please delete this
 let g:airline_powerline_fonts = 1
 
-"vim-airline extensions
+" vim-airline extensions
 let g:airline#extensions#syntastic#enabled = 1
 
 let g:airline#extensions#tabline#enabled = 1
