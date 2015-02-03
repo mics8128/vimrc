@@ -4,3 +4,4 @@ let mapleader = ","
 
 " nerdtree-tabs
 nnoremap <silent> <leader>t :NERDTreeTabsToggle<CR>
+nnoremap <silent> <leader>f :NERDTreeFocus<CR>
