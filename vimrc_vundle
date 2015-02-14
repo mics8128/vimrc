@@ -12,14 +12,22 @@
     call vundle#rc()
     Bundle 'gmarik/vundle'
     "Add your bundles here
+    "About vim
+    Bundle 'altercation/vim-colors-solarized'
+    Bundle 'bling/vim-airline'
+    "About files
     Bundle 'scrooloose/nerdtree'
     Bundle 'jistr/vim-nerdtree-tabs'
-    Bundle 'altercation/vim-colors-solarized'
+    "About HTML
     Bundle 'mattn/emmet-vim'
+    Bundle 'othree/xml.vim'
     Bundle 'xsbeats/vim-blade' 
+    "About coding
     Bundle 'scrooloose/syntastic'
-    Bundle 'bling/vim-airline'
+    Bundle 'fatih/vim-go'
     Bundle 'tpope/vim-fugitive'
+    Bundle 'davidhalter/jedi-vim'
+    Bundle 'jmcantrell/vim-virtualenv'
     " Bundle 'klen/python-mode'
 
     "...All your other bundles...

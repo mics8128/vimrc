@@ -52,6 +52,7 @@ set number                      "顯示行數
 set nobackup                    
 set nowritebackup              
 set history=50	                " keep 50 lines of command line history
+set mouse=nv                    " set mouse on n and v mode work
 
 
 
