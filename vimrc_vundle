@@ -27,7 +27,7 @@
     Bundle 'fatih/vim-go'
     Bundle 'tpope/vim-fugitive'
     Bundle 'davidhalter/jedi-vim'
-    Bundle 'jmcantrell/vim-virtualenv'
+    " Bundle 'jmcantrell/vim-virtualenv'
     " Bundle 'klen/python-mode'
 
     "...All your other bundles...
