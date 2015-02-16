@@ -25,12 +25,15 @@ to
 Include Bundle
 =======================
 
-* Bundle 'scrooloose/nerdtree'
-* Bundle 'jistr/vim-nerdtree-tabs'
+* Bundle 'gmarik/vundle'
 * Bundle 'altercation/vim-colors-solarized'
-* Bundle 'mattn/emmet-vim'
-* Bundle 'xsbeats/vim-blade' 
-* Bundle 'scrooloose/syntastic'
 * Bundle 'bling/vim-airline'
+* Bundle 'scrooloose/nerdtree'
+* Bundle 'mattn/emmet-vim'
+* Bundle 'othree/xml.vim'
+* Bundle 'xsbeats/vim-blade' 
 * Bundle 'tpope/vim-fugitive'
-* Bundle 'klen/python-mode' -- is disable now :/
+* Bundle 'scrooloose/syntastic'
+* Bundle 'majutsushi/tagbar'
+* Bundle 'ervandew/supertab'
+* Bundle 'davidhalter/jedi-vim'
