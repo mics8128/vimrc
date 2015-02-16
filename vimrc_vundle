@@ -26,6 +26,7 @@
     "About coding ALL 
     Bundle 'scrooloose/syntastic'
     Bundle 'majutsushi/tagbar'
+    Bundle 'ervandew/supertab'
     "About coding Python
     Bundle 'davidhalter/jedi-vim'
     "About coding Golang
