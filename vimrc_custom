@@ -5,11 +5,13 @@ let mapleader = ","
 " nerdtree-tabs
 nnoremap <silent> <leader>t :NERDTreeTabsToggle<CR>
 nnoremap <silent> <leader>f :NERDTreeFocus<CR>
+
+" for golang ==========================================
 au FileType go nmap <leader>r <Plug>(go-run)
+
+" for python ==========================================
 let g:jedi#completions_command = ""
 let g:jedi#rename_command = ""
-
-" for python 
 au FileType python nmap <leader>r :!python %<CR>
 
 " Add the virtualenv's site-packages to vim path

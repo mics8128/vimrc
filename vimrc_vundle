@@ -22,13 +22,14 @@
     Bundle 'mattn/emmet-vim'
     Bundle 'othree/xml.vim'
     Bundle 'xsbeats/vim-blade' 
-    "About coding
-    Bundle 'scrooloose/syntastic'
-    Bundle 'fatih/vim-go'
+    "About git
     Bundle 'tpope/vim-fugitive'
+    "About coding ALL 
+    Bundle 'scrooloose/syntastic'
+    "About coding Python
     Bundle 'davidhalter/jedi-vim'
-    " Bundle 'jmcantrell/vim-virtualenv'
-    " Bundle 'klen/python-mode'
+    "About coding Golang
+    Bundle 'fatih/vim-go'
 
     "...All your other bundles...
     if iCanHazVundle == 0
