@@ -17,7 +17,6 @@
     Bundle 'bling/vim-airline'
     "About files
     Bundle 'scrooloose/nerdtree'
-    Bundle 'jistr/vim-nerdtree-tabs'
     "About HTML
     Bundle 'mattn/emmet-vim'
     Bundle 'othree/xml.vim'
@@ -26,6 +25,7 @@
     Bundle 'tpope/vim-fugitive'
     "About coding ALL 
     Bundle 'scrooloose/syntastic'
+    Bundle 'majutsushi/tagbar'
     "About coding Python
     Bundle 'davidhalter/jedi-vim'
     "About coding Golang

@@ -1,10 +1,17 @@
 " my map leader :D
 let mapleader = ","
 
+" Moving around windows
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
 
 " nerdtree-tabs
-nnoremap <silent> <leader>t :NERDTreeTabsToggle<CR>
-nnoremap <silent> <leader>f :NERDTreeFocus<CR>
+nnoremap <silent> <leader>t :NERDTreeToggle<CR>
+
+" tagsbar
+nnoremap <silent> <leader>c :TagbarToggle<CR>
 
 " for golang ==========================================
 au FileType go nmap <leader>r <Plug>(go-run)
