@@ -32,6 +32,10 @@
     "About coding Golang
     Bundle 'fatih/vim-go'
 
+    "About wakatime.com
+    Bundle 'wakatime/vim-wakatime'
+
+
     "...All your other bundles...
     if iCanHazVundle == 0
         echo "Installing Bundles, please ignore key map error messages"
