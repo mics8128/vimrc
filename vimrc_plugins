@@ -17,4 +17,4 @@ let g:airline#extensions#branch#enabled = 1
 let g:go_fmt_fail_silently = 1
 
 let g:user_emmet_install_global = 0
-"autocmd FileType html,css,php EmmetInstall
+autocmd FileType html,css,php EmmetInstall
