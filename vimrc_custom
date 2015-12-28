@@ -13,3 +13,6 @@ nnoremap <silent> <leader>t :NERDTreeToggle<CR>
 " tagsbar
 nnoremap <silent> <leader>c :TagbarToggle<CR>
 
+" emmet
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key='m'
