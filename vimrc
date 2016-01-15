@@ -49,8 +49,10 @@ set cindent
 set backspace=indent,eol,start  "allow backspacing over everything in insert mode
 set background=dark             "背景顏色
 set number                      "顯示行數
-set nobackup                    
-set nowritebackup              
+"set nobackup                    
+"set nowritebackup              
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
 set history=50	                " keep 50 lines of command line history
 set mouse=nv                    " set mouse on n and v mode work
 

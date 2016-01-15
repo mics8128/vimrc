@@ -16,3 +16,10 @@ nnoremap <silent> <leader>c :TagbarToggle<CR>
 " emmet
 let g:user_emmet_mode='n'
 let g:user_emmet_leader_key='m'
+
+
+" abbreviations
+abbrev gm !php artisan generate:model
+abbrev gc !php artisan generate:controller
+abbrev gmig !php artisan generate:migration
+abbrev vimconfig e ~/.vim/vimrc_custom
