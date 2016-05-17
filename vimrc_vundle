@@ -11,29 +11,35 @@
     set rtp+=~/.vim/bundle/vundle/
     call vundle#rc()
     Bundle 'gmarik/vundle'
-    "Add your bundles here
-    "About vim
+
+    "---- About vim
     Bundle 'altercation/vim-colors-solarized'
     Bundle 'bling/vim-airline'
-    "About files
+
+    "---- About files
     Bundle 'scrooloose/nerdtree'
-    "About HTML
+
+    "---- About HTML
     Bundle 'mattn/emmet-vim'
-    Bundle 'othree/xml.vim'
+    "Bundle 'othree/xml.vim'
     Bundle 'xsbeats/vim-blade' 
-    "About git
-    Bundle 'tpope/vim-fugitive'
-    "About coding ALL 
-    Bundle 'scrooloose/syntastic'
-    Bundle 'majutsushi/tagbar'
-    Bundle 'ervandew/supertab'
-    "About coding Python
-    Bundle 'davidhalter/jedi-vim'
-    "About coding Golang
-    Bundle 'fatih/vim-go'
+
+    "---- About git
+    "Bundle 'tpope/vim-fugitive'
+
+    "---- About coding ALL 
+    "Bundle 'scrooloose/syntastic'
+    "Bundle 'majutsushi/tagbar'
+    "Bundle 'ervandew/supertab'
+    
+    "---- About coding Python
+    "Bundle 'davidhalter/jedi-vim'
+
+    "---- About coding Golang
+    "Bundle 'fatih/vim-go'
 
     "About wakatime.com
-    Bundle 'wakatime/vim-wakatime'
+    "Bundle 'wakatime/vim-wakatime'
 
 
     "...All your other bundles...

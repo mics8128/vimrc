@@ -11,8 +11,11 @@ map <c-h> <c-w>h
 nnoremap <silent> <leader>t :NERDTreeToggle<CR>
 
 " tagsbar
-nnoremap <silent> <leader>c :TagbarToggle<CR>
+" nnoremap <silent> <leader>c :TagbarToggle<CR>
 
 " emmet
-let g:user_emmet_mode='n'
+let g:user_emmet_mode='nv'
 let g:user_emmet_leader_key='m'
+
+" clear highlight
+nmap <Leader>/ :nohlsearch<CR>
