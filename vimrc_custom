@@ -1,3 +1,6 @@
+" set vim color
+colorscheme solarized
+
 " my map leader :D
 let mapleader = ","
 

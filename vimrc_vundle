@@ -14,7 +14,7 @@
 
     "---- About vim
     Bundle 'altercation/vim-colors-solarized'
-    Bundle 'bling/vim-airline'
+    "Bundle 'bling/vim-airline'
 
     "---- About files
     Bundle 'scrooloose/nerdtree'
