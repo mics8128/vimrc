@@ -18,6 +18,7 @@
 
     "---- About files
     Bundle 'scrooloose/nerdtree'
+    Bundle 'ctrlpvim/ctrlp.vim'
 
     "---- About HTML
     Bundle 'mattn/emmet-vim'
