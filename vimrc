@@ -54,6 +54,10 @@ set nowritebackup
 set history=50	                " keep 50 lines of command line history
 set mouse=nv                    " set mouse on n and v mode work
 
+"Split
+set splitbelow
+set splitright
+
 
 
 " load plugins setting and custom setting
