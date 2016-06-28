@@ -16,9 +16,10 @@
     Bundle 'altercation/vim-colors-solarized'
     "Bundle 'bling/vim-airline'
 
-    "---- About files
+    "---- About vim Ctrls
     Bundle 'scrooloose/nerdtree'
     Bundle 'ctrlpvim/ctrlp.vim'
+    Bundle 'tpope/vim-vinegar'
 
     "---- About HTML
     Bundle 'mattn/emmet-vim'

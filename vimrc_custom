@@ -1,6 +1,7 @@
 " set vim color
 colorscheme solarized
 
+" ===================== MAPPING ===========================
 " my map leader :D
 let mapleader = ","
 
@@ -10,8 +11,13 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+" clear highlight
+nmap <Leader>/ :nohlsearch<CR>
+
+" ===================== PLUGINS ===========================
 " nerdtree-tabs
 nnoremap <silent> <leader>t :NERDTreeToggle<CR>
+let NERDTreeHijackNetrw = 0 " let vim-vaingar '-' is working :)
 
 " tagsbar
 " nnoremap <silent> <leader>c :TagbarToggle<CR>
@@ -20,5 +26,3 @@ nnoremap <silent> <leader>t :NERDTreeToggle<CR>
 let g:user_emmet_mode='nv'
 let g:user_emmet_leader_key='m'
 
-" clear highlight
-nmap <Leader>/ :nohlsearch<CR>
