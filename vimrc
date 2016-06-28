@@ -49,8 +49,11 @@ set cindent
 set backspace=indent,eol,start  "allow backspacing over everything in insert mode
 set background=dark             "背景顏色
 set number                      "顯示行數
-"set nobackup                    
-"set nowritebackup              
+
+
+"Create Backup Folder
+silent !mkdir ~/.vim/backup > /dev/null 2>&1
+silent !mkdir ~/.vim/swap > /dev/null 2>&1
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set history=50	                " keep 50 lines of command line history
