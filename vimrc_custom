@@ -26,3 +26,8 @@ let NERDTreeHijackNetrw = 0 " let vim-vaingar '-' is working :)
 let g:user_emmet_mode='nv'
 let g:user_emmet_leader_key='m'
 
+" abbreviations
+abbrev gm !php artisan generate:model
+abbrev gc !php artisan generate:controller
+abbrev gmig !php artisan generate:migration
+abbrev vimconfig e ~/.vim/vimrc_custom
