@@ -31,4 +31,4 @@ ab gm !php artisan generate:model
 ab gc !php artisan generate:controller
 ab gmig !php artisan generate:migration
 ab vimconfig e ~/.vim/vimrc_custom
-ab sudos w !sudo tee %
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
