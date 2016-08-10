@@ -27,7 +27,8 @@ let g:user_emmet_mode='nv'
 let g:user_emmet_leader_key='m'
 
 " abbreviations
-abbrev gm !php artisan generate:model
-abbrev gc !php artisan generate:controller
-abbrev gmig !php artisan generate:migration
-abbrev vimconfig e ~/.vim/vimrc_custom
+ab gm !php artisan generate:model
+ab gc !php artisan generate:controller
+ab gmig !php artisan generate:migration
+ab vimconfig e ~/.vim/vimrc_custom
+ab sudos w !sudo tee %
