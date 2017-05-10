@@ -1,48 +1,51 @@
 " Setting up Vundle - the vim plugin bundler
     let iCanHazVundle=1
-    let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+    let vundle_readme=$HOME . '/.vim/bundle/Vundle.vim/README.md'
     if !filereadable(vundle_readme)
         echo "Installing Vundle.."
         echo ""
-        silent !mkdir -p ~/.vim/bundle
-        silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+        if has("win32")
+            silent !mkdir \%USERPROFILE\%\.vim\bundle
+            silent !git clone https://github.com/VundleVim/Vundle.vim.git \%USERPROFILE\%\.vim\bundle\Vundle.vim
+        else
+            silent !mkdir -p ~/.vim/bundle
+            silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+        endif "has ("win32")
         let iCanHazVundle=0
     endif
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
-    Bundle 'gmarik/vundle'
-
-    "---- About vim
-    Bundle 'altercation/vim-colors-solarized'
-    "Bundle 'bling/vim-airline'
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin('~/vim/bundle/Vundle.vim/')
+    Plugin 'VundleVim/Vundle.vim'
 
     "---- About vim Ctrls
-    Bundle 'scrooloose/nerdtree'
-    Bundle 'ctrlpvim/ctrlp.vim'
-    Bundle 'tpope/vim-vinegar'
+    Plugin 'scrooloose/nerdtree'
+    Plugin 'ctrlpvim/ctrlp.vim'
+    Plugin 'tpope/vim-vinegar'
 
     "---- About HTML
-    Bundle 'mattn/emmet-vim'
-    "Bundle 'othree/xml.vim'
-    Bundle 'xsbeats/vim-blade' 
+    Plugin 'mattn/emmet-vim'
+    "Plugin 'othree/xml.vim'
+    Plugin 'xsbeats/vim-blade'
 
     "---- About git
-    "Bundle 'tpope/vim-fugitive'
+    "Plugin 'tpope/vim-fugitive'
 
-    "---- About coding ALL 
-    "Bundle 'scrooloose/syntastic'
-    "Bundle 'majutsushi/tagbar'
-    "Bundle 'ervandew/supertab'
-    
+    "---- About coding ALL
+    "Plugin 'scrooloose/syntastic'
+    "Plugin 'majutsushi/tagbar'
+    "Plugin 'ervandew/supertab'
+
     "---- About coding Python
-    "Bundle 'davidhalter/jedi-vim'
+    "Plugin 'davidhalter/jedi-vim'
 
     "---- About coding Golang
-    "Bundle 'fatih/vim-go'
+    "Plugin 'fatih/vim-go'
 
     "About wakatime.com
-    "Bundle 'wakatime/vim-wakatime'
+    "Plugin 'wakatime/vim-wakatime'
 
+    call vundle#end()            " required
+    filetype plugin indent on    " required
 
     "...All your other bundles...
     if iCanHazVundle == 0

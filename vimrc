@@ -21,11 +21,20 @@ if has("autocmd")
                 \ if line("'\"") > 1 && line("'\"") <= line("$") |
                 \   exe "normal! g`\"" |
                 \ endif
-
 endif " has("autocmd")
 
+" Auto utf8?
+if has("multi_byte")
+    if &termencoding == ""
+        let &termencoding = &encoding
+    endif
+    set encoding=utf-8
+    setglobal fileencoding=utf-8
+    setglobal bomb
+    set fileencodings=ucs-bom,utf-8,latin1
+endif
 
-filetype plugin indent on
+
 syntax on                       " syntax highlight
 
 "Tab setting
@@ -52,8 +61,13 @@ set number                      "顯示行數
 
 
 "Create Backup Folder
-silent !mkdir ~/.vim/backup > /dev/null 2>&1
-silent !mkdir ~/.vim/swap > /dev/null 2>&1
+if has("win32")
+	silent !mkdir \%USERPROFILE\%\.vim\backup > NUL 2>&1
+	silent !mkdir \%USERPROFILE\%\.vim\swap > NUL 2>&1
+else
+	silent !mkdir ~/.vim/backup > /dev/null 2>&1
+	silent !mkdir ~/.vim/swap > /dev/null 2>&1
+endif
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set history=50	                " keep 50 lines of command line history
@@ -62,8 +76,6 @@ set mouse=nv                    " set mouse on n and v mode work
 "Split
 set splitbelow
 set splitright
-
-
 
 " load plugins setting and custom setting
 source ~/.vim/vimrc_plugins

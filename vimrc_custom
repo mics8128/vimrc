@@ -1,6 +1,3 @@
-" set vim color
-colorscheme solarized
-
 " ===================== MAPPING ===========================
 " my map leader :D
 let mapleader = ","
