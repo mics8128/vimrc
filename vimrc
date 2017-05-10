@@ -37,21 +37,16 @@ endif " has("multi_byte")
 syntax on                       " syntax highlight
 
 " GUI setting
-
 if has('gui_running')
     source $VIMRUNTIME/delmenu.vim
 
     " 使用 slate 佈景主題。
     colorscheme solarized
     set guifont=Hack:h16
-    set guioptions-=m  "remove menu bar
-    set guioptions-=T  "remove toolbar
-    set guioptions-=r  "remove right-hand scroll bar
-    set guioptions-=L  "remove left-hand scroll bar
+    set go=c
     set lines=35 columns=120
 
 endif
-
 
 " Tab setting
 set tabstop=4                   "縮排寬度
