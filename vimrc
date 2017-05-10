@@ -40,12 +40,10 @@ syntax on                       " syntax highlight
 if has('gui_running')
     source $VIMRUNTIME/delmenu.vim
 
-    " 使用 slate 佈景主題。
     colorscheme solarized
-    set guifont=Hack:h16
     set go=c
+    set guifont=Hack:h16
     set lines=35 columns=120
-
 endif
 
 " Tab setting
