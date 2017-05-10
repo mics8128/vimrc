@@ -14,8 +14,10 @@
         let iCanHazVundle=0
     endif
     set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin('~/vim/bundle/Vundle.vim/')
+    call vundle#begin('~/.vim/bundle/Vundle.vim/')
     Plugin 'VundleVim/Vundle.vim'
+    "---- About vim
+    Plugin 'altercation/vim-colors-solarized'
 
     "---- About vim Ctrls
     Plugin 'scrooloose/nerdtree'

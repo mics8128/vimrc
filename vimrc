@@ -23,7 +23,7 @@ if has("autocmd")
                 \ endif
 endif " has("autocmd")
 
-" Auto utf8?
+" Auto utf8
 if has("multi_byte")
     if &termencoding == ""
         let &termencoding = &encoding
@@ -32,29 +32,45 @@ if has("multi_byte")
     setglobal fileencoding=utf-8
     setglobal bomb
     set fileencodings=ucs-bom,utf-8,latin1
-endif
-
+endif " has("multi_byte")
 
 syntax on                       " syntax highlight
 
-"Tab setting
+" GUI setting
+
+if has('gui_running')
+    source $VIMRUNTIME/delmenu.vim
+
+    " 使用 slate 佈景主題。
+    colorscheme solarized
+    set guifont=Hack:h16
+    set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right-hand scroll bar
+    set guioptions-=L  "remove left-hand scroll bar
+    set lines=35 columns=120
+
+endif
+
+
+" Tab setting
 set tabstop=4                   "縮排寬度
 set softtabstop=4
 set expandtab                   "以空白取代Tab
 
-"Search setting
+" Search setting
 set hlsearch                    " 高亮搜尋
 set incsearch                   " 預先搜尋
 set ignorecase                  " 搜尋忽視大小寫
 set smartcase                   " gnore case if search pattern is all lowercase,case-sensitive otherwise
 set shiftwidth=4
 
-"Indent 
+" Indent 
 set smartindent                 "聰明版自動縮排
 set copyindent
 set cindent
 
-"Other
+" Other
 set backspace=indent,eol,start  "allow backspacing over everything in insert mode
 set background=dark             "背景顏色
 set number                      "顯示行數
