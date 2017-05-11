@@ -75,6 +75,8 @@ set cindent
 
 " Other
 set backspace=indent,eol,start  " allow backspacing over everything in insert mode
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 
 "Create Backup Folder
