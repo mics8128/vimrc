@@ -31,25 +31,35 @@ if has("multi_byte")
     set encoding=utf-8
     setglobal fileencoding=utf-8
     setglobal bomb
-    set fileencodings=ucs-bom,utf-8,latin1
+    set fileencodings=utf-8,big5
 endif " has("multi_byte")
 
 syntax on                       " syntax highlight
 
 " GUI setting
-if has('gui_running')
+if has("gui_running")
     source $VIMRUNTIME/delmenu.vim
+    source $VIMRUNTIME/menu.vim
 
-    colorscheme solarized
-    set go=c
+    set guioptions=c
     set guifont=Hack:h16
     set lines=35 columns=120
-endif
+    set cursorline                  " 強調當前行
+    try
+        colorscheme solarized
+    catch /^Vim\%((\a\+)\)\=:E185/
+        colorscheme desert
+    endtry 
+endif " has("gun_running")
+
+" Interface setting
+set background=dark             " 背景顏色
+set number                      " 顯示行數
 
 " Tab setting
-set tabstop=4                   "縮排寬度
+set tabstop=4                   " 縮排寬度
 set softtabstop=4
-set expandtab                   "以空白取代Tab
+set expandtab                   " 以空白取代Tab
 
 " Search setting
 set hlsearch                    " 高亮搜尋
@@ -59,14 +69,12 @@ set smartcase                   " gnore case if search pattern is all lowercase,
 set shiftwidth=4
 
 " Indent 
-set smartindent                 "聰明版自動縮排
+set smartindent                 " 聰明版自動縮排
 set copyindent
 set cindent
 
 " Other
-set backspace=indent,eol,start  "allow backspacing over everything in insert mode
-set background=dark             "背景顏色
-set number                      "顯示行數
+set backspace=indent,eol,start  " allow backspacing over everything in insert mode
 
 
 "Create Backup Folder
