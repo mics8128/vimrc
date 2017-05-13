@@ -23,8 +23,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 "---- About HTML
 Plugin 'mattn/emmet-vim'
+Plugin 'jwalton512/vim-blade'
 "Plugin 'othree/xml.vim'
-"Plugin 'xsbeats/vim-blade'
 
 "---- About git
 Plugin 'tpope/vim-fugitive'
