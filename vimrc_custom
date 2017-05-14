@@ -6,7 +6,7 @@ if has("gui_running")
 
     set guioptions=c
     set guifont=Hack:h14
-    set lines=35 columns=120
+    set lines=40 columns=120
     set cursorline                  " 強調當前行
     try
         colorscheme solarized
@@ -28,7 +28,7 @@ set expandtab                   " 以空白取代Tab
 set hlsearch                    " 高亮搜尋
 set incsearch                   " 預先搜尋
 set ignorecase                  " 搜尋忽視大小寫
-set smartcase                   " gnore case if search pattern is all lowercase,case-sensitive otherwise
+set smartcase                   " ignore case if search pattern is all lowercase,case-sensitive otherwise
 set shiftwidth=4
 
 " Indent 
