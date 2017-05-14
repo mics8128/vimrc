@@ -1,3 +1,49 @@
+" ===================== CONFIG ===========================
+" GUI setting
+if has("gui_running")
+    source $VIMRUNTIME/delmenu.vim
+    source $VIMRUNTIME/menu.vim
+
+    set guioptions=c
+    set guifont=Hack:h14
+    set lines=35 columns=120
+    set cursorline                  " 強調當前行
+    try
+        colorscheme solarized
+    catch /^Vim\%((\a\+)\)\=:E185/
+        colorscheme desert
+    endtry 
+endif " has("gun_running")
+
+" Interface setting
+set background=dark             " 背景顏色
+set number                      " 顯示行數
+
+" Tab setting
+set tabstop=4                   " 縮排寬度
+set softtabstop=4
+set expandtab                   " 以空白取代Tab
+
+" Search setting
+set hlsearch                    " 高亮搜尋
+set incsearch                   " 預先搜尋
+set ignorecase                  " 搜尋忽視大小寫
+set smartcase                   " gnore case if search pattern is all lowercase,case-sensitive otherwise
+set shiftwidth=4
+
+" Indent 
+set smartindent                 " 聰明版自動縮排
+set copyindent
+set cindent
+
+" Split
+set splitbelow
+set splitright
+
+" Other
+set backspace=indent,eol,start  " allow backspacing over everything in insert mode
+set history=100	                " keep 50 lines of command line history
+set mouse=nv                    " set mouse on n and v mode work
 " ===================== MAPPING ===========================
 " my map leader :D
 let mapleader = ","
@@ -9,7 +55,10 @@ map <c-l> <c-w>l
 map <c-h> <c-w>h
 
 " clear highlight
-nmap <Leader>/ :nohlsearch<CR>
+nmap <leader>/ :nohlsearch<CR>
+
+" paste
+" map <leader>p \"+p
 
 " ===================== PLUGINS ===========================
 " nerdtree-tabs
@@ -24,7 +73,7 @@ let g:user_emmet_mode='nv'
 let g:user_emmet_leader_key='m'
 
 " abbreviations
-ab gm !php artisan generate:model
-ab gc !php artisan generate:controller
-ab gmig !php artisan generate:migration
-ab vimconfig e ~/.vim/vimrc_custom
+ab lgm !php artisan generate:model
+ab lgc !php artisan generate:controller
+ab lgmig !php artisan generate:migration
+ab vimconfig tabnew ~/.vim/vimrc_custom
