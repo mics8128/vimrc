@@ -19,6 +19,7 @@ Plugin 'altercation/vim-colors-solarized'
 "---- About vim Ctrls
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ajh17/VimCompletesMe'
 "Plugin 'tpope/vim-vinegar'
 
 "---- About HTML
