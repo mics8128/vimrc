@@ -19,6 +19,7 @@ endif " has("gun_running")
 syntax on                       " syntax highlight
 set background=dark             " 背景顏色
 set number                      " 顯示行數
+highlight clear SignColumn      " sign column 背景低亮度
 
 " Tab setting
 set tabstop=4                   " 縮排寬度

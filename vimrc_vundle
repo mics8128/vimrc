@@ -32,8 +32,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'jwalton512/vim-blade'
 "Plugin 'othree/xml.vim'
 
-"---- About git
-Plugin 'tpope/vim-fugitive'
+"---- About version control
+Plugin 'mhinz/vim-signify'
 
 "---- About coding ALL
 Plugin 'vim-syntastic/syntastic'
