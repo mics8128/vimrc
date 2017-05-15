@@ -56,5 +56,4 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 
 " load plugins setting and custom setting
-source ~/.vim/vimrc_plugins
 source ~/.vim/vimrc_custom

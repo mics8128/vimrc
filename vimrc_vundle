@@ -31,7 +31,7 @@ Plugin 'jwalton512/vim-blade'
 Plugin 'tpope/vim-fugitive'
 
 "---- About coding ALL
-"Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
 "Plugin 'majutsushi/tagbar'
 "Plugin 'ervandew/supertab'
 

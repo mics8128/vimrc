@@ -64,6 +64,7 @@ nmap <leader>/ :nohlsearch<CR>
 " nerdtree-tabs
 nnoremap <silent> <leader>t :NERDTreeToggle<CR>
 let NERDTreeHijackNetrw = 0 " let vim-vaingar '-' is working :)
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " tagsbar
 " nnoremap <silent> <leader>c :TagbarToggle<CR>
@@ -71,8 +72,10 @@ let NERDTreeHijackNetrw = 0 " let vim-vaingar '-' is working :)
 " emmet
 let g:user_emmet_mode='nv'
 let g:user_emmet_leader_key='m'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,php EmmetInstall
 
-" abbreviations
+" laravel
 ab lgm !php artisan generate:model
 ab lgc !php artisan generate:controller
 ab lgmig !php artisan generate:migration
