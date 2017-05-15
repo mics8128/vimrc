@@ -63,11 +63,12 @@ map <c-h> <c-w>h
 nmap <leader>/ :nohlsearch<CR>
 
 " paste
-" map <leader>p \"+p
+nmap <leader>p "+p
 
 " ===================== PLUGINS ===========================
 " nerdtree-tabs
-nnoremap <silent> <leader>t :NERDTreeToggle<CR>
+let g:nerdtree_tabs_open_on_gui_startup=0
+nnoremap <silent> <leader>t :NERDTreeTabsToggle<CR>
 let NERDTreeHijackNetrw = 0 " let vim-vaingar '-' is working :)
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 

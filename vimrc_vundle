@@ -17,8 +17,12 @@ Plugin 'VundleVim/Vundle.vim'
 "---- About vim
 Plugin 'altercation/vim-colors-solarized'
 
-"---- About vim Ctrls
+"---- About nerdtree
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'jistr/vim-nerdtree-tabs'
+
+"---- About vim Ctrls
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ajh17/VimCompletesMe'
 "Plugin 'tpope/vim-vinegar'
