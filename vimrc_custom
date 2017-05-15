@@ -50,6 +50,7 @@ autocmd GUIEnter * set visualbell t_vb=
 set backspace=indent,eol,start  " allow backspacing over everything in insert mode
 set history=100	                " keep 50 lines of command line history
 set mouse=nv                    " set mouse on n and v mode work
+
 " ===================== MAPPING ===========================
 " my map leader :D
 let mapleader = ","
@@ -73,6 +74,13 @@ let NERDTreeHijackNetrw=0 " let vim-vaingar '-' is working :)
 nnoremap <silent> <leader>t :NERDTreeMirrorToggle<CR>
 let NERDTreeQuitOnOpen=1
 
+" syntastic
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 3
 
 " tagsbar
 " nnoremap <silent> <leader>c :TagbarToggle<CR>
@@ -80,7 +88,7 @@ let NERDTreeQuitOnOpen=1
 " emmet
 let g:user_emmet_mode='nv'
 let g:user_emmet_leader_key='m'
-let g:user_emmet_install_global = 0
+let g:user_emmet_install_global=0
 autocmd FileType html,css,php EmmetInstall
 
 " laravel
