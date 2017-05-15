@@ -68,9 +68,10 @@ nmap <leader>p "+p
 " ===================== PLUGINS ===========================
 " nerdtree-tabs
 let g:nerdtree_tabs_open_on_gui_startup=0
-nnoremap <silent> <leader>t :NERDTreeTabsToggle<CR>
-let NERDTreeHijackNetrw = 0 " let vim-vaingar '-' is working :)
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let NERDTreeHijackNetrw=0 " let vim-vaingar '-' is working :)
+nnoremap <silent> <leader>t :NERDTreeMirrorToggle<CR>
+let NERDTreeQuitOnOpen=1
+
 
 " tagsbar
 " nnoremap <silent> <leader>c :TagbarToggle<CR>
