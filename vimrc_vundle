@@ -11,6 +11,7 @@ if !filereadable(vundle_readme)
     endif "has ("win32")
 endif
 set rtp+=~/.vim/bundle/Vundle.vim
+filetype off " require before vundle#begin
 call vundle#begin('~/.vim/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 "---- About vim

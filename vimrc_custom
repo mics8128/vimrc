@@ -16,6 +16,7 @@ if has("gui_running")
 endif " has("gun_running")
 
 " Interface setting
+syntax on                       " syntax highlight
 set background=dark             " 背景顏色
 set number                      " 顯示行數
 
@@ -39,6 +40,10 @@ set cindent
 " Split
 set splitbelow
 set splitright
+
+" no beeping
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 " Other
 set backspace=indent,eol,start  " allow backspacing over everything in insert mode
@@ -79,4 +84,7 @@ autocmd FileType html,css,php EmmetInstall
 ab lgm !php artisan generate:model
 ab lgc !php artisan generate:controller
 ab lgmig !php artisan generate:migration
+
+" reload config
 ab vimconfig tabnew ~/.vim/vimrc_custom
+ab vimvundle tabnew ~/.vim/vimrc_vundle
