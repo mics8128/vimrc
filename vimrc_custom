@@ -18,6 +18,7 @@ endif " has("gun_running")
 " Interface setting
 syntax on                       " syntax highlight
 set background=dark             " 背景顏色
+set relativenumber                      " 顯示行數
 set number                      " 顯示行數
 highlight clear SignColumn      " sign column 背景低亮度
 
