@@ -24,6 +24,7 @@ highlight clear SignColumn      " sign column 背景低亮度
 " Tab setting
 set tabstop=4                   " 縮排寬度
 set softtabstop=4
+set shiftwidth=4
 set expandtab                   " 以空白取代Tab
 
 " Search setting
@@ -31,7 +32,6 @@ set hlsearch                    " 高亮搜尋
 set incsearch                   " 預先搜尋
 set ignorecase                  " 搜尋忽視大小寫
 set smartcase                   " ignore case if search pattern is all lowercase,case-sensitive otherwise
-set shiftwidth=4
 
 " Indent 
 set smartindent                 " 聰明版自動縮排

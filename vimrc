@@ -6,6 +6,8 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+set rtp+=~/.vim/
+
 " auto install and load vundle
 source ~/.vim/vimrc_vundle
 
