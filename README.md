@@ -1,4 +1,4 @@
-Install (Linux)
+Install (Linux & Mac)
 =======================
 
 you have to install git and vim first, and run command below
